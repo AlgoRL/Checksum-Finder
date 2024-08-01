@@ -40,6 +40,9 @@ int main()
 
         std::string checksum = ChecksumFinder::get_checksum(path);
         std::cout << checksum;
+
+        std::cin.ignore();
+        std::cin.get();
     }
     catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;
